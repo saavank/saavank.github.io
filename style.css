@@ -43,8 +43,8 @@ section {
 }
 
 #hero .profile-img {
-    width: 300px;
-    border-radius: 50%;
+    width: 500px;
+    border-radius: 100%;
 }
 
 footer {
