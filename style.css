@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code&family=Libre+Baskerville&family=Space+Mono&family=Work+Sans&display=swap" rel="stylesheet");
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -25,13 +25,14 @@
   height: 0;
 }
 #cssmenu {
-  width: auto;
-  border-bottom: 3px solid #FFCB05;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1;
+  width: 400px;
+  font-family: 'Space Mono', monospace;
+  
 }
 #cssmenu ul {
-  background: #000;
+background: linear-gradient(to bottom right, #000000 0%, #1a231c 100%);
+
+
 }
 #cssmenu > ul > li {
   float: left;
@@ -57,18 +58,18 @@
   font-size: 15px;
   font-weight: 400;
   text-decoration: none;
-  color: #444444;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -ms-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
+  color: #bdbbbb;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   margin-right: -4px;
 }
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover {
-  color: #ffffff;
+  color: #00ff37;
 }
 #cssmenu > ul > li > a:after {
   position: absolute;
@@ -81,9 +82,9 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   content: "";
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   -webkit-transform: perspective(5px) rotateX(2deg);
   -webkit-transform-origin: bottom;
   -moz-transform: perspective(5px) rotateX(2deg);
@@ -94,24 +95,30 @@
 #cssmenu > ul > li.active > a:after,
 #cssmenu > ul > li:hover > a:after,
 #cssmenu > ul > li > a:hover:after {
-  background: ##FFCB05;
+background: linear-gradient(to bottom right, #000000 0%, #1a231c 100%);
+
 }
 
 body {
-  background-color: #000;
+background: linear-gradient(to bottom right, #000000 0%, #1a231c 100%);
+
+
   height: 100%;
-font-family: 'Montserrat', sans-serif;  
+font-family: 'Fira Code', monospace;
 }
 
 h1 {
   font-size: 4em;
-  color: #FFCB05;
+  color: #00ff37;
+  text-shadow: 1px 1px 2px #ffffff;
+
   margin-top: 350px;
   text-align: center;
+  margin-bottom: 500px;
 }
 
 span {
-  border-right: .05em solid;
+  border-right: 0.05em solid;
   animation: caret 1s steps(1) infinite;
 }
 
@@ -120,3 +127,36 @@ span {
     border-color: transparent;
   }
 }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-linkedin {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+
+
+
+
